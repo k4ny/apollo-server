@@ -18,7 +18,9 @@
     "testonly": "npm test",
     "test:ci": "npm run coverage -- --ci --maxWorkers=2  --reporters=default --reporters=jest-junit",
     "coverage": "npm test -- --coverage",
-    "coverage:upload": "codecov"
+    "coverage:upload": "codecov",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.ts": [
@@ -60,7 +62,8 @@
     "apollo-server-plugin-base": "file:packages/apollo-server-plugin-base",
     "apollo-server-testing": "file:packages/apollo-server-testing",
     "apollo-tracing": "file:packages/apollo-tracing",
-    "graphql-extensions": "file:packages/graphql-extensions"
+    "graphql-extensions": "file:packages/graphql-extensions",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/async-retry": "1.2.1",
@@ -136,5 +139,6 @@
     "projects": [
       "<rootDir>/packages/*"
     ]
-  }
+  },
+  "snyk": true
 }
