@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-engine-reporting > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-express > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-azure-functions > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-cloud-functions > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-cloudflare > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-hapi > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-integration-testsuite > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-koa > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-lambda > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-micro > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server-testing > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
+    - apollo-server > apollo-server-express > apollo-server-core > lodash:
+        patched: '2020-04-30T21:01:34.760Z'
